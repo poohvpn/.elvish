@@ -19,7 +19,7 @@ fn newmod [name]{
 
     cd $name
     {
-        echo mod $mod
+        echo module $mod
         echo "\ngo" (re:replace '^go(\d+\.\d+)\.\d+' '$1' (go env GOVERSION))
     } > go.mod
     git init
